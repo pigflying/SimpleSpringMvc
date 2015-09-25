@@ -16,3 +16,6 @@
 
 #Blog
 --[阮一峰](http://www.ruanyifeng.com/blog)
+
+#Shell
+--[shellBook](http://tldp.org/LDP/abs/html/index.html)
