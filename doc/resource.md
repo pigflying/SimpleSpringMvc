@@ -20,3 +20,6 @@
 
 #Shell
 --[shellBook](http://tldp.org/LDP/abs/html/index.html)
+
+#Other
+*[设计模式浅谈](http://cmsblogs.com/?p=457)
