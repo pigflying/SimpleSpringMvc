@@ -23,3 +23,4 @@
 
 #Other
 *[设计模式浅谈](http://cmsblogs.com/?p=457)
+*[QCan2015上海](http://www.stuq.org/ppt/qcon2015/QCon上海2015/)
