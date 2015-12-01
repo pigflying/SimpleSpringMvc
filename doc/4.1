@@ -1,0 +1,122 @@
+# 医生版4.1
+
+## 下拉加载消息
+- 初始通过websocket返回最多二百条消息（保存最小的seq）
+- App进行query
+
+### 查询(患者消息，科室消息，好友消息，群聊消息，小杏消息)
+- stanza:(message, departMessage, friendMessage, groupChatMessage, xiaoxingMessage)
+- params:(patientId, departId, friendId, groupId, -)
+
+- 例如：患者消息
+{
+  "stanza": "message", 
+  "op": "query",
+  "params": {
+      "patientId":< 患者ID >
+      "seq": < 最大的ID >
+  },
+  "guid": < 消息GUID > 
+}
+
+### 返回值
+- 患者消息，科室消息，好友消息，群聊消息，小杏消息返回的results结构与初始化数据结构相同
+- 例如：患者消息
+{
+    stanza: "message" ,
+    message: {
+        results:[{
+        doctorId: < 医生ID >,
+        patientId: < 患者ID >,
+        receiverId: < 收ID >
+        content: < 消息内容 >,
+        typ: < 消息类别 >,
+        guid: < 消息guid >,
+        status: < 消息状态 >,
+        visibility: < 消息的可见性 >
+        id: < 消息编号 >,
+        created: < 创建时间 >
+    }, ...],
+    seq: < 最大ID, 下次请求使用 >
+    },
+    guid: < Stanza的GUID >
+}
+
+### 实现
+- 如果请求参数有seq, 返回小于seq的二十条消息, 返回最小的seq作为下一次查询的最大seq.
+- 如果没有参数seq, 返回最新的20条消息
+
+## 快捷回复数据后台读取
+
+### 获取医生所有的快捷消息
+
+- URL: /api/quickReply/list
+
+### 方法
+
+- POST (x-www-form-urlencoded)
+
+### 返回值: 
+{
+  "success":true,
+  "quickMessage": [{
+      "id": < 快捷消息ID >,
+      "message": < 快捷消息内容 >
+  }...]
+}
+
+### 新增快捷回复消息
+
+- URL: /api/quickReply/add
+
+### 方法
+
+- POST (x-www-form-urlencoded)
+
+### 参数
+
+- message 快捷消息内容
+
+### 返回值: 
+{
+  "success":true,
+  "quickMessage": {
+      "id": < 快捷消息ID >,
+      "message": < 快捷消息内容 >
+  }
+}
+
+### 修改快捷回复消息
+
+- URL: /api/quickReply/mod
+
+### 方法
+
+- POST (x-www-form-urlencoded)
+
+### 参数
+
+- 消息ID
+- message 快捷消息内容
+
+### 返回值: 
+{
+  "success":true,
+  "quickMessage": {
+      "id": < 快捷消息ID >,
+      "message": < 快捷消息内容 >
+  }
+}
+
+### 删除快捷回复消息
+
+- URL: /api/quickReply/<quickId>/add
+
+### 方法
+
+- GET
+
+### 返回值: 
+{
+  "success":true
+}
