@@ -10,6 +10,7 @@
 ##java
 --[IBM技术站](https://www.ibm.com/developerworks/java/)
 --[javaHashMap遍历性能对比](http://www.zuidaima.com/share/2533859516025856.htm)
+--[java面试](http://www.importnew.com/17232.html)
 
 ##JS HTML
 --[js事件处理](http://web.jobbole.com/83591/)
