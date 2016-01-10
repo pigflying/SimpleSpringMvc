@@ -25,3 +25,17 @@
 #Other
 *[设计模式浅谈](http://cmsblogs.com/?p=457)
 *[QCan2015上海](http://www.stuq.org/ppt/qcon2015/QCon上海2015/)
+
+## 需要了解/学习的一些东西
+
+- Nginx微调到支持keep-alive连接，Netty优化到支持大量并发负载支持模型
+- HBase与Cassandra负责对汇聚及传统数据集进行计数
+- 利用谷歌Protobuf实现数据传输
+- 用户配置文件亦会利用Apache Kafka在RocksDB当中进行同步。
+- 选择CQEngine作为首选内存内快速查询系统
+- 反向代理使用Nginx
+- Apache Spark是用户ML处理
+- Nagios与Newrelic用于服务器监控
+- 利用ZooKeeper实现分布式同步
+- 利用Bittorrent Sync在节点与数据中心之间实现关键性数据同步
+- Disruptor框架引入预聚合机制
