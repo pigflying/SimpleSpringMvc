@@ -7,4 +7,6 @@ linux 命令：
 ln: 创建一个链接 参考：http://www.cnblogs.com/joeblackzqq/archive/2011/03/20/1989625.html
 
 
+subline 插件：https://github.com/mediachicken/sublimetext-defaultplus-theme
+
 
