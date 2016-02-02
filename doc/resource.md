@@ -39,3 +39,8 @@
 - 利用ZooKeeper实现分布式同步
 - 利用Bittorrent Sync在节点与数据中心之间实现关键性数据同步
 - Disruptor框架引入预聚合机制
+
+#good Source
+
+- leet Code
+- Bob Martin
