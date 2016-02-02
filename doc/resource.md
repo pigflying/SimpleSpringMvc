@@ -23,6 +23,7 @@
 --[shellBook](http://tldp.org/LDP/abs/html/index.html)
 
 - 查看性能的18个命令行工具 
+
 > top 按一定顺序显示所有的活动进程  
 > vmstat(需要安装) 虚拟内存、内存县城、磁盘、系统进程等 
 > lsof 以列表的形式显示所有打开的文件和进程
