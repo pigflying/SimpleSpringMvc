@@ -25,14 +25,23 @@
 - 查看性能的18个命令行工具 
 
 > top 按一定顺序显示所有的活动进程  
+
 > vmstat(需要安装) 虚拟内存、内存县城、磁盘、系统进程等 
+
 > lsof 以列表的形式显示所有打开的文件和进程
+
 > tcpdump 网络包分析器
+
 > netstat 网络包，网络接口统计命令
+
 > htop(第三方包) 进程管理
+
 > lotop 监控磁盘I/O iostat 输入/输出统计 iptraf 实时局域网监控
+
 > psacct/acct 监视用户活动 monit 进程和服务监控工具
+
 > nethogs 检测每个进程使用的网络带宽 iftop 网络带宽 monitorix 系统和网络监控
+
 > arpwatch 以太网活动监视器 suricata 网络安全监控 vnstat php 网络流量监控 nagios 网络/服务器监控
 
 #Other
