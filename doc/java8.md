@@ -793,3 +793,5 @@ PermGen space<a href="http://www.javacodegeeks.com/2013/02/java-8-from-permgen-t
 - Installing Java™ 8 Support in Eclipse Kepler SR2: <a href="http://www.eclipse.org/downloads/java8/">http://www.eclipse.org/downloads/java8/</a>
 - Java 8: <a href="http://www.baeldung.com/java8">http://www.baeldung.com/java8</a>
 - Oracle Nashorn. A Next-Generation JavaScript Engine for the JVM: <a href="http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html">http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html</a>
+
+来源：https://www.javacodegeeks.com/2014/05/java-8-features-tutorial.html#streams
